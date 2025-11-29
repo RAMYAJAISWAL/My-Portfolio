@@ -27,7 +27,7 @@ const Nav = () => {
   ];
 
   return (
-    <nav className="bg-slate-800  w-full py-4 shadow-md fixed top-0 left-0  z=50">
+    <nav className="bg-slate-800  w-full py-4 shadow-md fixed z=[999] top-0 left-0  ">
       <div className="max-w-7xl mx-auto flex items-center px-6 justify-between">
 
         {/* LEFT SIDE — LOGO */}

@@ -24,10 +24,10 @@ const About=()=>{
    return (
     
    <section id="about" class="py-20 px-6 md:px-20 bg-slate-900 text-white">
-    <h2 class="text-4xl font-bold text-center mb-35">
+    <h2 class="text-4xl font-bold text-center mb-25">
     About Me
   </h2>
-  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2  gap-12 items-center">
 
     
     <div class="flex justify-center md:justify-start">
@@ -55,9 +55,9 @@ const About=()=>{
 
   </div>
   
-      <h2 className="text-4xl font-bold text-center mb-12">Education</h2>
+      <h2 className="text-4xl font-bold text-center  mt-20 mb-12">Education</h2>
 
-      <div className="relative max-w-4xl mx-auto">
+      <div className="relative z=0 max-w-4xl mx-auto ">
         {/* Center line */}
         <div className="absolute left-1/2 transform -translate-x-1/2 z=0 h-full border-l-2 border-gray-600 hidden md:block"></div>
 
@@ -65,7 +65,7 @@ const About=()=>{
           <div
             key={index}
             className={`mb-10 flex flex-col md:flex-row ${
-              index % 2 === 0 ? "md:justify-end" : "md:justify-start"
+              index % 2 === 0 ? "md:justify-end " : "md:justify-start"
             }`}
           >
             {/* Card */}

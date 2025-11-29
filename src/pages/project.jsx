@@ -8,27 +8,10 @@ const projects = [
       "A personal portfolio website built using React and Tailwind CSS.",
     image: "https://via.placeholder.com/400x250",
     tech: ["React", "Tailwind", "JavaScript"],
-    live: "#",
-    github: "#",
+    
+    github: "https://github.com/RAMYAJAISWAL/My-Portfolio",
   },
-  {
-    title: "Student Management System",
-    description:
-      "A web app to manage students, courses, and results.",
-    image: "https://via.placeholder.com/400x250",
-    tech: ["React", "Node.js", "MongoDB"],
-    live: "#",
-    github: "#",
-  },
-  {
-    title: "Weather App",
-    description:
-      "Weather forecasting app using public API.",
-    image: "https://via.placeholder.com/400x250",
-    tech: ["React", "API", "CSS"],
-    live: "#",
-    github: "#",
-  },
+  
 ];
 
 const Projects = () => {
@@ -40,11 +23,11 @@ const Projects = () => {
     <div className="bg-slate-900 text-white min-h-screen py-12 px-5">
       <h1 className="text-4xl font-bold text-center mb-10">Projects</h1>
 
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto mt-20">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform"
+            className="bg-slate-800 rounded-xl overflow-hidden shadow-lg  transition-transform"
           >
             {/* Image */}
             <img
@@ -77,19 +60,12 @@ const Projects = () => {
 
               {/* Buttons */}
               <div className="flex gap-4">
-                <a
-                  href={project.live}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded text-sm"
-                >
-                  Live Demo
-                </a>
+               
                 <a
                   href={project.github}
                   target="_blank"
                   rel="noreferrer"
-                  className="border border-gray-400 px-4 py-2 rounded text-sm hover:bg-slate-700"
+                  className=" px-4 py-2 rounded text-sm bg-blue-600 text-white"
                 >
                   GitHub
                 </a>

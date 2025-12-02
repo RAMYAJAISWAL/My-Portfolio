@@ -10,7 +10,7 @@ const Home = () => {
       {/* LEFT — PHOTO */}
       <div className="flex justify-center md:w-1/2 mb-10 md:mb-0">
         <img
-          src="/default.jpg"
+          src="/home-pic.jpg"
           alt="profile"
           className="w-60 h-60 md:w-72 md:h-72 rounded-full object-cover shadow-xl border-4 border-blue-500"
         />
@@ -23,7 +23,7 @@ const Home = () => {
         </h1>
 
         <p className="text-lg md:text-xl text-gray-300">
-          I am a frontend developer passionate about building beautiful and fast web applications.
+          Currently learning full-stack development and building projects along the way.
         </p>
 
         

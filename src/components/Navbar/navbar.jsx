@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import { Link } from "react-router-dom";
+
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -27,11 +27,11 @@ const Nav = () => {
   ];
 
   return (
-    <nav className="bg-slate-800  w-full py-4 shadow-md fixed z=[999] top-0 left-0  ">
+    <nav className="bg-slate-800  w-full py-4 shadow-md fixed z-50 top-0 left-0  ">
       <div className="max-w-7xl mx-auto flex items-center px-6 justify-between">
 
         {/* LEFT SIDE — LOGO */}
-        <h1 className="text-3xl font-serif italic ml-20 text-white tracking-widest">
+        <h1 className="text-3xl font-serif italic ml-10 text-white tracking-widest">
           RJ
         </h1>
 
@@ -54,7 +54,9 @@ const Nav = () => {
         {/* RESUME BUTTON (DESKTOP) */}
         <div className="hidden md:flex">
           <a
-            href="/resume.pdf"
+            href="/Ramya_Jaiswal_Resume.pdf"
+            download target="_blank"
+            rel="noopener noreferrer"
             className="bg-blue-600 text-white px-4 py-2 mr-15 rounded-lg hover:bg-blue-500 transition shadow"
           >
             Resume
@@ -86,7 +88,9 @@ const Nav = () => {
 
           {/* Resume in Mobile */}
           <a
-            href="/resume.pdf"
+            href="/Ramya_Jaiswal_Resume.pdf"
+            download target="_blank"
+            rel="noopener noreferrer"
             className="bg-blue-600 text-white px-4 py-2 rounded-lg text-center hover:bg-blue-500 transition shadow"
           >
             Resume

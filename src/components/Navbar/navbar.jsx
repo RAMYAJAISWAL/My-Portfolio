@@ -27,11 +27,12 @@ const Nav = () => {
   ];
 
   return (
-    <nav className="bg-slate-800  w-full py-4 shadow-md fixed z-50 top-0 left-0  ">
-      <div className="max-w-7xl mx-auto flex items-center px-6 justify-between">
+    <nav className="bg-slate-800  w-full max-w-full overflow-x-hidden
+     py-4 shadow-md fixed z-50 top-0 left-0  ">
+      <div className="max-w-7xl mx-auto flex items-center px-4 sm:px-6 justify-between">
 
         {/* LEFT SIDE — LOGO */}
-        <h1 className="text-3xl font-serif italic ml-10 text-white tracking-widest">
+        <h1 className="text-2xl sm:text-3xl font-serif italic  text-white tracking-widest">
           RJ
         </h1>
 

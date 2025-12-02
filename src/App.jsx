@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import Nav from './components/Navbar/navbar';
-
+import "./index.css";
 import Home from './pages/home';
 import Main from './components/Main/mainn';
 import About from "./pages/about";
@@ -14,7 +14,7 @@ import Contact from "./pages/contact";
 import Footer from './components/Footer/footer';
 function App() {
   return(
-    <div>
+    <div className="overflow-x-hidden">
 <Nav></Nav>
 <Main></Main>
 <Footer></Footer>

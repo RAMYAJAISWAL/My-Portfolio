@@ -21,8 +21,7 @@ const Skills = () => {
   const softSkills = [
     { name: "Communication", emoji: "🗣️" },
     { name: "Teamwork", emoji: "🤝" },
-    { name: "Problem Solving", emoji: "🧠" },
-    { name: "Creativity", emoji: "🎨" },
+    { name: "Creative Writing", emoji: "🖊️" },
   ];
 
   const container = {

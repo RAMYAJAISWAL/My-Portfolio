@@ -65,7 +65,7 @@ const About = () => {
             <span className="font-semibold text-blue-400">
               Ramya
             </span>
-            , an aspiring web developer who enjoys creating simple,
+            , an aspiring full-stack web developer who enjoys creating simple,
             meaningful, and user-friendly projects. I love learning
             new technologies, experimenting with ideas, and improving
             my skills every day.
@@ -73,58 +73,63 @@ const About = () => {
         </motion.div>
       </div>
 
-      {/* EDUCATION HEADING */}
-      <motion.h2
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ amount: 0.3 }}
-        className="text-4xl font-bold text-center mb-14"
-      >
-        Education
-      </motion.h2>
+     {/* TITLE */}
+<motion.h2
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ amount: 0.3 }}
+  className="text-4xl font-bold text-center mb-14"
+>
+  Education
+</motion.h2>
 
-      {/* EDUCATION TIMELINE */}
-      <div className="relative max-w-5xl mx-auto">
-        {/* CENTER LINE */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-[2px] bg-gray-600 hidden md:block"></div>
+{/* TIMELINE */}
+<div className="relative max-w-5xl mx-auto">
 
-        {educationData.map((item, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, x: index % 2 === 0 ? -60 : 60 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ amount: 0.3 }}
-            className={`mb-10 flex flex-col md:flex-row ${
-              index % 2 === 0 ? "md:justify-end" : "md:justify-start"
-            }`}
-          >
-            {/* EDUCATION CARD */}
-            <div className="md:w-1/2 w-full md:px-6">
-              <div className="bg-slate-800 p-4 max-w-md rounded-lg shadow-md
-                              hover:scale-[1.03] transition-transform duration-300">
-                <h4 className="text-lg font-semibold">
-                  {item.degree}
-                </h4>
+  {/* VERTICAL LINE (MOBILE + DESKTOP) */}
+  <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-[2px] bg-gray-600"></div>
 
-                <h5 className="text-gray-300 text-sm mt-1">
-                  {item.institution}
-                </h5>
+  {educationData.map((item, index) => (
+    <motion.div
+      key={index}
+      initial={{ opacity: 0, x: index % 2 === 0 ? -60 : 60 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ amount: 0.3 }}
+      className={`mb-10 flex ${
+        index % 2 === 0
+          ? "md:justify-end"
+          : "md:justify-start"
+      }`}
+    >
 
-                <span className="text-xs text-teal-400 font-medium block mt-1">
-                  {item.year}
-                </span>
-              </div>
-            </div>
+      {/* CARD */}
+      <div className="w-full md:w-1/2 pl-10 md:px-6">
+        <div className="bg-slate-800 p-4 rounded-lg shadow-md max-w-md
+                        hover:scale-[1.03] transition-transform duration-300">
+          <h4 className="text-lg font-semibold">{item.degree}</h4>
 
-            {/* TIMELINE DOT */}
-            <div className="hidden md:flex items-center justify-center w-0">
-              <span className="w-3.5 h-3.5 bg-teal-400 rounded-full absolute left-1/2 transform -translate-x-1/2"></span>
-            </div>
-          </motion.div>
-        ))}
+          <h5 className="text-gray-300 text-sm mt-1">
+            {item.institution}
+          </h5>
+
+          <span className="text-xs text-teal-400 font-medium block mt-1">
+            {item.year}
+          </span>
+        </div>
       </div>
+
+      {/* DOT (ALWAYS VISIBLE) */}
+      <span className="absolute left-4 md:left-1/2 w-3.5 h-3.5 
+                       bg-teal-400 rounded-full
+                       transform -translate-x-1/2 mt-6">
+      </span>
+
+    </motion.div>
+  ))}
+</div>
+
     </section>
   );
 };

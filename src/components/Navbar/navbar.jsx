@@ -27,12 +27,12 @@ const Nav = () => {
   ];
 
   return (
-    <nav className="bg-slate-800  w-full max-w-full overflow-x-hidden
+    <nav className="bg-slate-800  w-full overflow-x-hidden
      py-4 shadow-md fixed z-50 top-0 left-0  ">
       <div className="max-w-7xl mx-auto flex items-center px-4 sm:px-6 justify-between">
 
         {/* LEFT SIDE — LOGO */}
-        <h1 className="text-2xl sm:text-3xl font-serif italic  text-white tracking-widest">
+        <h1 className="text-2xl sm:text-3xl font-serif italic text-white tracking-widest">
           RJ
         </h1>
 
@@ -58,7 +58,7 @@ const Nav = () => {
             href="/Ramya_Jaiswal_Resume.pdf"
             download target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-600 text-white px-4 py-2 mr-15 rounded-lg hover:bg-blue-500 transition shadow"
+            className="bg-blue-600 text-white px-4 py-2  rounded-lg hover:bg-blue-500 transition shadow"
           >
             Resume
           </a>

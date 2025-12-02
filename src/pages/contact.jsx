@@ -107,7 +107,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="flex gap-6 mt-6 text-3xl">
+            <div className="flex gap-6 mt-10 text-3xl">
               <a
                 href="https://www.linkedin.com/in/ramya-jaiswal-72b741341/"
                 target="_blank"

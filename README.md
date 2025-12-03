@@ -1,16 +1,44 @@
-# React + Vite
+ Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive portfolio website built using React.js, Tailwind CSS, and Framer Motion.
 
-Currently, two official plugins are available:
+ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Built with React.js for component-based structure
+Tailwind CSS for fast and responsive styling
+Framer Motion animations for smooth transitions and interactions
+Projects section with GitHub/live demo links
+Contact section 
 
-## React Compiler
+ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Frontend: React.js 
+Styling: Tailwind CSS
+Animations: Framer Motion
+Icons: React Icons / Lucide Icons (update if applicable)
+Deployment: Vercel 
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ Getting Started
+
+ 1. Clone the repository
+
+git clone https://github.com/yourusername/your-portfolio.git
+cd your-portfolio
+
+
+ 2. Install dependencies
+
+npm install
+
+
+3. Run the development server
+
+npm run dev
+
+
+Live at : https://ramyaportfolio-pi.vercel.app
+
+ License
+This project is licensed under the **MIT License**.
+
